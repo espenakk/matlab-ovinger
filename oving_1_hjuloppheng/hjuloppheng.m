@@ -3,8 +3,8 @@ clc   % clear command window
 close all % lukker alle figurer
 
 % Parametre
-M1 = 40; % Kg
-M2 = 250; % Kg
+M1 = 10; % Kg
+M2 = 400; % Kg
 B = 500; % Ns / m
 K1 = 20000; % N / m
 K2 = 10000; % N / m
@@ -34,7 +34,7 @@ clf;
 subplot(2,1,1)
 plot(ans.t, ans.X1)
 
-% axis([0 tstop 0 0.5])
+% Axis([0 tstop 0 0.5])
 grid
 title('Hjulets utslag')
 
@@ -43,7 +43,7 @@ ylabel('Posisjon  [m]')
 subplot(2,1,2)
 plot(ans.t, ans.X2)
 
-% axis([0 tstop 4e5 9e5])
+% Axis([0 tstop 4e5 9e5])
 grid
 title('Bilens utslag')
 xlabel('Tid [s]')
