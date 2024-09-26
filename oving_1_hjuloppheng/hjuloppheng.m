@@ -42,7 +42,7 @@ title('Hjulets utslag')
 ylabel('Posisjon  [m]')
 subplot(2,1,2)
 plot(ans.t, ans.X2)
-
+axis([])
 % Axis([0 tstop 4e5 9e5])
 grid
 title('Bilens utslag')
